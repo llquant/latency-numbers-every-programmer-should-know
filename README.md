@@ -17,3 +17,6 @@
 ## 译者
 
 中文版本由 [LLQuant](https://github.com/llquant/) 翻译、校对并整理。
+
+## 在线文档
+[每个程序员都应该知道的延迟数字](https://llquant.com/latency-numbers/index.html)
