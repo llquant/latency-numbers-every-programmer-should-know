@@ -4,6 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>每个程序员都应该知道的延迟数字（1990 - 2026）</title>
+<meta name="description" content="交互展示 1990 至 2026 年 CPU、内存、网络与存储延迟的数量级变化，并给出数据来源与推导方法。" />
+<link rel="canonical" href="https://llquant.com/latency-numbers/index.html" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="LLQuant" />
+<meta property="og:title" content="每个程序员都应该知道的延迟数字（1990 - 2026）" />
+<meta property="og:description" content="交互展示 1990 至 2026 年 CPU、内存、网络与存储延迟的数量级变化，并给出数据来源与推导方法。" />
+<meta property="og:url" content="https://llquant.com/latency-numbers/index.html" />
 <link rel="icon" href="/favicon.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -530,6 +537,11 @@
     cursor: pointer;
   }
   input[type=range].year-slider:focus { outline: none; }
+  input[type=range].year-slider:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 6px;
+    border-radius: var(--radius-sm);
+  }
   input[type=range].year-slider::-webkit-slider-runnable-track {
     height: 4px;
     background: linear-gradient(90deg,
@@ -1291,7 +1303,7 @@
       <h4>原始清单（2002）</h4>
       <ul>
         <li>
-          <a href="http://norvig.com/21-days.html#answers">Jeff Dean &amp; Peter Norvig &mdash; "Numbers Everyone Should Know"</a>
+          <a href="https://norvig.com/21-days.html#answers">Jeff Dean &amp; Peter Norvig &mdash; "Numbers Everyone Should Know"</a>
           &mdash; 本页所继承的 2002 年版延迟数字经典清单。
         </li>
       </ul>
@@ -1358,13 +1370,13 @@
       </p>
       <ul>
         <li><strong>network2k:</strong>
-          <a href="http://www.ethernetalliance.org/wp-content/uploads/2015/03/EthernetAlliance_Roadmap_whitepaper_FINAL-032015-2.pdf">Ethernet Alliance 2015 roadmap</a>,
+          <a href="https://www.ethernetalliance.org/wp-content/uploads/2015/03/EthernetAlliance_Roadmap_whitepaper_FINAL-032015-2.pdf">Ethernet Alliance 2015 roadmap</a>,
           <a href="https://www.arista.com/assets/data/pdf/10GigE_Whitepaper.pdf">Arista 10 GbE adoption whitepaper</a>,
           <a href="https://www.lightwaveonline.com/business/market-research/article/14199458/100gbe-switch-port-shipments-top-10gbe-numbers-crehan-research">Crehan Research on 100 GbE shipments (2020)</a>.</li>
         <li><strong>memMB:</strong>
           <a href="https://www.servethehome.com/guide-ddr-ddr2-ddr3-ddr4-and-ddr5-bandwidth-by-generation/">ServeTheHome DDR generation guide</a>,
           <a href="https://journal.panda.institute/memory-bandwidth">panda.institute memory-bandwidth article</a>,
-          <a href="http://ixbtlabs.com/articles2/ddr2-rmma/ddr2-rmma.html">ixbtlabs early DDR2 measurements</a>.</li>
+          <a href="https://web.archive.org/web/20050315205101/http://www.ixbtlabs.com/articles2/ddr2-rmma/ddr2-rmma.html">ixbtlabs early DDR2 measurements</a>.</li>
         <li><strong>ssdMB:</strong>
           <a href="https://en.wikipedia.org/wiki/List_of_Intel_SSDs">Wikipedia "List of Intel SSDs"</a>,
           <a href="https://download.semiconductor.samsung.com/resources/white-paper/Samsung_SSD_950_PRO_White_paper.pdf">Samsung 950 PRO whitepaper</a>,
@@ -2825,8 +2837,8 @@ $slider.addEventListener("input", e => {
 });
 
 // -------- Play / pause animation --------
-// ~600 ms per year × 27 years = ~16 s end-to-end, slow enough to read each
-// row but fast enough to feel like an animation rather than a slideshow.
+// At the default 1× speed, 1.88 s per year × 36 years is about 68 s
+// end-to-end, slow enough to read each row while the timeline advances.
 // Advance continuously via requestAnimationFrame so the slider thumb and
 // every metric row flow smoothly between years rather than snapping in
 // 1-year jumps.

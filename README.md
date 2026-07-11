@@ -4,9 +4,9 @@
 
 ## 来源
 
-本页面基于 Colin Scott 的交互式作品 **Latency Numbers Every Programmer Should Know** 构建，并继承了 Jeff Dean / Peter Norvig 经典清单 **Numbers Everyone Should Know** 的核心内容。
+本页面基于 Colin Scott 的交互式作品 [**Latency Numbers Every Programmer Should Know**](https://colin-scott.github.io/personal_website/research/interactive_latency.html) 构建，并继承了 Jeff Dean / Peter Norvig 经典清单 **Numbers Everyone Should Know** 的核心内容。
 
-页面将原时间线扩展到 2026 年，并参考 Omar Bohsali 的 **Latency Numbers You Should Know in 2026**、Erick Guan 的 2024 年延迟数据，以及其他公开资料，对现代 CPU、DRAM、PCIe、NVMe、网络和 HDD 指标进行了补充与校验。
+页面将原时间线扩展到 2026 年，并参考 Omar Bohsali 的 [**Latency Numbers You Should Know in 2026**](https://omarish.com/latency-numbers-you-should-know)、Erick Guan 的 [2024 年延迟数据](https://erickguan.me/2024/latency-values)，以及其他公开资料，对现代 CPU、DRAM、PCIe、NVMe、网络和 HDD 指标进行了补充与校验。
 
 ## 作用
 
