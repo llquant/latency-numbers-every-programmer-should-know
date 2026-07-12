@@ -14,9 +14,12 @@
 
 通过拖动年份滑块，读者可以看到不同技术演进速度的差异：有些指标持续改善，有些指标受到物理、地理距离、机械结构或一致性协议限制，已经进入平台期。
 
+把这些数量级用于低延迟系统设计时，可以先用[低延迟链路图](/hardware-network/latency-path-map)拆分实际路径，再按[延迟 Trace Schema](/observability-tuning/latency-trace-schema)定义可比较的时间点和时钟域。
+
 ## 译者
 
 中文版本由 [LLQuant](https://github.com/llquant/) 翻译、校对并整理。
 
 ## 在线文档
+
 [每个程序员都应该知道的延迟数字](https://llquant.com/latency-numbers/index.html)
